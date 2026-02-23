@@ -21,8 +21,8 @@ jxRequirements:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
-    environmentGitOwner: todo
+    clusterName: milokube
+    environmentGitOwner: MiloSommer
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -30,16 +30,19 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: MiloSommer
+    repository: jx
   - key: staging
-  - key: production
   ingress:
-    domain: change.me
+    domain: jx.miloserver.local
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: MiloSommer
   repository: bucketrepo
   secretStorage: local
   vault: {}
