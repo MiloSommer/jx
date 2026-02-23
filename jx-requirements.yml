@@ -6,10 +6,10 @@ spec:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: milokube
     devEnvApprovers:
     - todo
-    environmentGitOwner: todo
+    environmentGitOwner: MiloSommer
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -18,9 +18,8 @@ spec:
   environments:
   - key: dev
   - key: staging
-  - key: production
   ingress:
-    domain: ""
+    domain: "jx.miloserver.local"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
