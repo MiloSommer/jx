@@ -42,6 +42,7 @@ jxRequirements:
       enabled: false
       production: false
   pipelineUser:
+    email: milosommer@hotmail.de
     username: MiloSommer
   repository: bucketrepo
   secretStorage: local
