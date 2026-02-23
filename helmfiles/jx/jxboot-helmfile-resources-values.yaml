@@ -1,0 +1,3 @@
+ingress:
+  customHosts:
+    hook: "https://3v61by7yw73m.share.zrok.io"
