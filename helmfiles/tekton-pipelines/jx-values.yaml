@@ -34,6 +34,8 @@ jxRequirements:
     repository: jx
   - key: staging
   ingress:
+    annotations:
+      nginx.ingress.kubernetes.io/service-upstream: "true"
     domain: jx.miloserver.local
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
