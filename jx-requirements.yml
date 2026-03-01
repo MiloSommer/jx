@@ -22,6 +22,8 @@ spec:
     domain: jx.miloserver.local
     kind: ingress
     namespaceSubDomain: -jx.
+    annotations:
+      nginx.ingress.kubernetes.io/service-upstream: "true"
     tls:
       email: ""
       enabled: false
