@@ -103,8 +103,8 @@
 - namespace: nginx
   path: helmfiles/nginx/helmfile.yaml
   releases:
-  - firstDeployed: "2026-03-01T15:26:49Z"
-    lastDeployed: "2026-03-01T15:26:49Z"
+  - firstDeployed: "2026-03-01T19:40:56Z"
+    lastDeployed: "2026-03-01T19:40:56Z"
     name: ingress-nginx
     releaseName: nginx-ingress
     repositoryName: ingress-nginx-oci

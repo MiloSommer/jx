@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: MiloSommer
+    provider: github
+    repository: rust-prototype
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: milosommer-rust-prototype
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/MiloSommer/rust-prototype.git
+  org: MiloSommer
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: rust-prototype
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/MiloSommer/rust-prototype
